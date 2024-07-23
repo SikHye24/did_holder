@@ -10,12 +10,23 @@
     "test": "jest"
   },
   "dependencies": {
+    "@credo-ts/anoncreds": "^0.5.3",
+    "@credo-ts/askar": "^0.5.3",
+    "@credo-ts/core": "^0.5.3",
+    "@credo-ts/indy-vdr": "^0.5.3",
+    "@credo-ts/react-native": "^0.5.3",
+    "@hyperledger/anoncreds-react-native": "^0.2.2",
+    "@hyperledger/aries-askar-react-native": "^0.2.1",
+    "@hyperledger/indy-vdr-react-native": "^0.2.2",
     "@react-navigation/native": "^6.1.18",
     "@react-navigation/stack": "^6.4.1",
     "@types/react-native": "^0.73.0",
+    "buffer": "^6.0.3",
     "react": "18.2.0",
     "react-native": "0.72.6",
+    "react-native-fs": "^2.20.0",
     "react-native-gesture-handler": "^2.17.1",
+    "react-native-get-random-values": "^1.11.0",
     "react-native-safe-area-context": "^4.10.8",
     "react-native-screens": "^3.32.0"
   },
@@ -38,5 +49,17 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "resolutions": {
+    "@unimodules/react-native-adapter": "./noop",
+    "@unimodules/core": "./noop",
+    "@cosmjs/amino": "npm:@cosmjs-rn/amino@^0.27.1",
+    "@cosmjs/encoding": "npm:@cosmjs-rn/encoding@^0.27.1",
+    "@cosmjs/math": "npm:@cosmjs-rn/math@^0.27.1",
+    "@cosmjs/stargate": "npm:@cosmjs-rn/stargate@^0.27.1",
+    "@cosmjs/tendermint-rpc": "npm:@cosmjs-rn/tendermint-rpc@^0.27.1",
+    "@cosmjs/utils": "npm:@cosmjs-rn/utils@^0.27.1",
+    "@cosmjs/proto-signing": "npm:@cosmjs-rn/proto-signing@^0.27.1",
+    "@cosmjs/crypto": "npm:@cosmjs-rn/crypto@^0.27.1"
   }
 }

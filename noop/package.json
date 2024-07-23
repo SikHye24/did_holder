@@ -1,0 +1,6 @@
+{
+  "name": "noop",
+  "version": "1.0.0",
+  "description": "An empty package for replacing unimodules",
+  "main": "index.js"
+}
