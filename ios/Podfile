@@ -17,6 +17,9 @@ end
 target 'did_holder' do
   config = use_native_modules!
 
+  # 추가된 부분: AriesAskar 모듈 추가
+  pod 'aries-askar', :path => '../node_modules/@hyperledger/aries-askar-react-native'
+
   # Flags change depending on the env values.
   flags = get_default_flags()
 

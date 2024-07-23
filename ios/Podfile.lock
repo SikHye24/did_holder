@@ -1,4 +1,12 @@
 PODS:
+  - anoncreds (0.2.2):
+    - React
+    - React-callinvoker
+    - React-Core
+  - aries-askar (0.2.3):
+    - React
+    - React-callinvoker
+    - React-Core
   - boost (1.76.0)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.72.6)
@@ -14,6 +22,10 @@ PODS:
   - hermes-engine (0.72.6):
     - hermes-engine/Pre-built (= 0.72.6)
   - hermes-engine/Pre-built (0.72.6)
+  - indy-vdr (0.2.2):
+    - React
+    - React-callinvoker
+    - React-Core
   - libevent (2.1.12)
   - RCT-Folly (2021.07.22.00):
     - boost
@@ -315,6 +327,8 @@ PODS:
   - React-jsinspector (0.72.6)
   - React-logger (0.72.6):
     - glog
+  - react-native-get-random-values (1.11.0):
+    - React-Core
   - react-native-safe-area-context (4.10.8):
     - React-Core
   - React-NativeModulesApple (0.72.6):
@@ -427,6 +441,8 @@ PODS:
     - React-jsi (= 0.72.6)
     - React-logger (= 0.72.6)
     - React-perflogger (= 0.72.6)
+  - RNFS (2.20.0):
+    - React-Core
   - RNGestureHandler (2.17.1):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
@@ -438,12 +454,15 @@ PODS:
   - Yoga (1.14.0)
 
 DEPENDENCIES:
+  - "anoncreds (from `../node_modules/@hyperledger/anoncreds-react-native`)"
+  - "aries-askar (from `../node_modules/@hyperledger/aries-askar-react-native`)"
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
+  - "indy-vdr (from `../node_modules/@hyperledger/indy-vdr-react-native`)"
   - libevent (~> 2.1.12)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -461,6 +480,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-get-random-values (from `../node_modules/react-native-get-random-values`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -479,6 +499,7 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNFS (from `../node_modules/react-native-fs`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -490,6 +511,10 @@ SPEC REPOS:
     - SocketRocket
 
 EXTERNAL SOURCES:
+  anoncreds:
+    :path: "../node_modules/@hyperledger/anoncreds-react-native"
+  aries-askar:
+    :path: "../node_modules/@hyperledger/aries-askar-react-native"
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
   DoubleConversion:
@@ -503,6 +528,8 @@ EXTERNAL SOURCES:
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
     :tag: hermes-2023-08-07-RNv0.72.4-813b2def12bc9df02654b3e3653ae4a68d0572e0
+  indy-vdr:
+    :path: "../node_modules/@hyperledger/indy-vdr-react-native"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -533,6 +560,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-get-random-values:
+    :path: "../node_modules/react-native-get-random-values"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   React-NativeModulesApple:
@@ -569,6 +598,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/utils"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNFS:
+    :path: "../node_modules/react-native-fs"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNScreens:
@@ -577,6 +608,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  anoncreds: c709906b5a3caaf6bbe871646e6c16b522c6531d
+  aries-askar: 3a78d5cfc8faedbfc55a9ff35e2309fc4574a147
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   FBLazyVector: 748c0ef74f2bf4b36cfcccf37916806940a64c32
@@ -584,6 +617,7 @@ SPEC CHECKSUMS:
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 8057e75cfc1437b178ac86c8654b24e7fead7f60
+  indy-vdr: 790ab1fd9b12ad5adfce4905c327f5902253eeeb
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: 28469809442eb4eb5528462705f7d852948c8a74
@@ -600,6 +634,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 3bf18ff7cb03cd8dfdce08fbbc0d15058c1d71ae
   React-jsinspector: 194e32c6aab382d88713ad3dd0025c5f5c4ee072
   React-logger: cebf22b6cf43434e471dc561e5911b40ac01d289
+  react-native-get-random-values: 21325b2244dfa6b58878f51f9aa42821e7ba3d06
   react-native-safe-area-context: b7daa1a8df36095a032dff095a1ea8963cb48371
   React-NativeModulesApple: 02e35e9a51e10c6422f04f5e4076a7c02243fff2
   React-perflogger: e3596db7e753f51766bceadc061936ef1472edc3
@@ -618,11 +653,12 @@ SPEC CHECKSUMS:
   React-runtimescheduler: f23e337008403341177fc52ee4ca94e442c17ede
   React-utils: fa59c9a3375fb6f4aeb66714fd3f7f76b43a9f16
   ReactCommon: dd03c17275c200496f346af93a7b94c53f3093a4
+  RNFS: 4ac0f0ea233904cb798630b3c077808c06931688
   RNGestureHandler: bbb8e17b10afdafc5cc5746e8f60772236e7e2ca
   RNScreens: 0bd9eec783bed1032e02a4db9976dae1664a5c7b
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: b76f1acfda8212aa16b7e26bcce3983230c82603
 
-PODFILE CHECKSUM: 48e73bb8eff91a609adc580bbb32a369f479b68a
+PODFILE CHECKSUM: 753c5df05d200398447f8da6c9aaa25d8604348c
 
 COCOAPODS: 1.15.2
